@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {%extends 'testapp/base.html'%}
   {%block body_block%}
+<h1>Employee Information</h1>
    <table border="2">
        <thead>
         <th>Emp NO</th>
@@ -15,6 +16,7 @@
            <td>{{emp.esal}}</td>
            <td>{{emp.eaddr}}</td>
        </tr>
+       {%endfor%}
        </thead>
    </table>
   {%endblock%}
