@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from testapp.models import Employee
-from django.db.models import Q,Avg,Min,Max
+from django.db.models import Q,Avg,Min,Max,Sum
 from django.db.models.functions import Lower
 # Create your views here.
 def display_view(request):
@@ -8,5 +8,5 @@ def display_view(request):
 
     return render(request,'testapp/index.html',{"employee":employee})
 def aggregate_view(request):
-   maxeno=Employee.objects.all().aggregate(Max('eno'))
-   return render(request,'testapp/index.html',{"minsal":maxeno})
+   sumofesal=Employee.objects.all().aggregate(Sum('esal'))
+   return render(request,'testapp/index.html',{"sumsal":sumofesal})
