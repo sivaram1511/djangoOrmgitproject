@@ -8,5 +8,5 @@ def display_view(request):
 
     return render(request,'testapp/index.html',{"employee":employee})
 def aggregate_view(request):
-   sumofesal=Employee.objects.all().aggregate(Sum('esal'))
+   sumofesal=Employee.objects.count()
    return render(request,'testapp/index.html',{"sumsal":sumofesal})
