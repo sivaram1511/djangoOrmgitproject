@@ -4,7 +4,7 @@ from django.db.models import Q,Avg,Min,Max,Sum
 from django.db.models.functions import Lower
 # Create your views here.
 def display_view(request):
-    employee=Employee.objects.filter(esal__gt=15000)[0:5]
+    employee=Employee.objects.all()
 
     return render(request,'testapp/index.html',{"employee":employee})
 def aggregate_view(request):
