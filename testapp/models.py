@@ -11,6 +11,3 @@ class Employee(models.Model):
 
     objects=CustomManager()
 # Create your models here.
-class Student(models.Model):
-    rollno=models.IntegerField()
-    marks=models.IntegerField(3)
