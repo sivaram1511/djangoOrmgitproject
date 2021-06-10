@@ -7,7 +7,7 @@ def display_view(request):
     #employee=Employee.objects.all()
     '''employee=ProxyEmployee.objects.values('ename',ename__contains='sa')
     return render(request,'testapp/index.html',{"employee":employee})'''
-    emp=Employee.objects.values_list("eno","ename")
+    emp=Employee.objects.values_list("eno").order_by('eno')
     return render(request,'testapp/index.html',{"emp":emp})
 def aggregate_view(request):
    sumofesal=Employee.objects.count()
