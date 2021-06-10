@@ -5,7 +5,7 @@ from django.db.models.functions import Lower
 # Create your views here.
 def display_view(request):
     #employee=Employee.objects.all()
-    employee=Employee.objects.get_emp_order_by('ename')
+    employee=ProxyEmployee.objects.values('ename',ename__contains='sa')
     return render(request,'testapp/index.html',{"employee":employee})
 def aggregate_view(request):
    sumofesal=Employee.objects.count()

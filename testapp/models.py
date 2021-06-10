@@ -9,7 +9,7 @@ class CustomManager(models.Manager):
         return super().get_queryset().order_by(param)
 class  CustomManager2(models.Manager):
     def get_queryset(self):
-        return super().get_queryset().filter(ename__startswith='b')
+        return super().get_queryset().order_by('ename')
     def get_emp_sal_not_ename(self):
         return super().get_queryset().exclude(ename__startswith='b')
 
