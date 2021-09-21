@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,9 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db490be1-a371-4f89-9a3b-99885a72385d" name="Default Changelist" comment="">
+      <change afterPath="F:/restwithviewsets1/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="F:/restwithviewsets1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="F:/restwithviewsets1/.idea/restwithviewsets1.iml" afterDir="false" />
+      <change afterPath="F:/restwithviewsets1/testapp/forms.py" afterDir="false" />
+      <change afterPath="F:/restwithviewsets1/testapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/djangoOrmgitproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoOrmgitproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testapp/templates/testapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/testapp/templates/testapp/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testapp/templates/testapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/testapp/templates/testapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testapp/views.py" afterDir="false" />
     </list>
@@ -35,13 +45,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="F:/restwithapiview" />
   </component>
   <component name="ProjectId" id="1tCH1FvyVNaY2ExiNxh7vGT1ruo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,8 +64,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="F:/restwithapiview" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -76,11 +92,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1626101374015">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1626101374015" />
   </component>
 </project>

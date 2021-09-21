@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/djangoOrmgitproject.iml" filepath="$PROJECT_DIR$/.idea/djangoOrmgitproject.iml" />
+      <module fileurl="file://F:/restwithapiview/.idea/restwithapiview.iml" filepath="F:/restwithapiview/.idea/restwithapiview.iml" />
+      <module fileurl="file://F:/restwithviewsets1/.idea/restwithviewsets1.iml" filepath="F:/restwithviewsets1/.idea/restwithviewsets1.iml" />
     </modules>
   </component>
 </project>
