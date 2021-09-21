@@ -14,7 +14,7 @@ def display_view(request):
     #c=sorted(a)
     #print(c)
     #xy=Employee.objects.filter(esal=c[-2])
-    qs=Employee.objects.filter(ename__iexact="TOm")
+    qs=Employee.objects.filter(esal__range=[35000,90000]).order_by("ename")
 
 
 
