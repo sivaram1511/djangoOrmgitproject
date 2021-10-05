@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from testapp.models import Employee,ProxyEmployee
-from django.db.models import Q,Avg,Min,Max,Sum,F
+from django.db.models import Q,Avg,Min,Max,Sum,F,Count
 from django.db.models.functions import Lower
 # Create your views here.
 def display_view(request):
@@ -14,7 +14,8 @@ def display_view(request):
     #c=sorted(a)
     #print(c)
     #xy=Employee.objects.filter(esal=c[-2])
-    qs=Employee.objects.filter(esal__gt=15000)|Employee.objects.filter(ename__contains='s')
+    qs=Employee.objects.aggregate(Avg('esal'))
+
 
 
 
