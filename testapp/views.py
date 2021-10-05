@@ -14,12 +14,15 @@ def display_view(request):
     #c=sorted(a)
     #print(c)
     #xy=Employee.objects.filter(esal=c[-2])
-    qs=Employee.objects.aggregate(Avg('esal'))
+
+    qs=Employee.objects.filter(esal=10000).exists()
+    xy=list(qs)
 
 
 
 
-    return render(request,'testapp/index.html',{'employee':qs})
+
+    return render(request,'testapp/index.html',{'employee':xy})
 def aggregate_view(request):
    qs=Employee.objects.all().exclude(esal=5000)
    return render(request,'testapp/index.html',{"maxsal":qs})
