@@ -19,3 +19,4 @@ class ProxyEmployee(Employee):
     #objects = CustomManager2()
     class Meta:
         proxy=True
+print("this is models djjango")
