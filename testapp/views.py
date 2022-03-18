@@ -14,12 +14,12 @@ def display_view(request):
     #c=sorted(a)
     #print(c)
     #xy=Employee.objects.filter(esal=c[-2])
+    #qs=[qs1,]
+    qs1 =Employee.objects.filter(ename__istartswith ="h")
 
-    qs1=Employee.objects.get(eno__exact=345)
-    qs=[qs1,]
-
-
-    return render(request,'testapp/index.html',{'employee':qs})
+    #qs1 =Employee.objects.all()
+    #print(type(qs1))
+    return render(request,'testapp/index.html',{'employee':qs1})
 def aggregate_view(request):
    qs=Employee.objects.all().exclude(esal=5000)
    return render(request,'testapp/index.html',{"maxsal":qs})
