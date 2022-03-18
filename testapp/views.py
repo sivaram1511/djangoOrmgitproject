@@ -15,7 +15,7 @@ def display_view(request):
     #print(c)
     #xy=Employee.objects.filter(esal=c[-2])
     #qs=[qs1,]
-    qs1 =Employee.objects.filter(ename__istartswith ="h")
+    qs1 =Employee.objects.filter(esal__range=(15000,50000)) | Employee.objects.filter(ename__startswith="h")
 
     #qs1 =Employee.objects.all()
     #print(type(qs1))
