@@ -17,7 +17,7 @@ def display_view(request):
     #qs=[qs1,]
     #qs1 =Employee.objects.all()
     #print(type(qs1))
-    qs1 =Employee.objects.filter(esal__range=(12000,45000),ename__startswith ='b')
+    qs1 =Employee.objects.filter(~Q(esal__range=(15000,50000)))
 
     return render(request,'testapp/index.html',{'employee':qs1})
 def aggregate_view(request):
