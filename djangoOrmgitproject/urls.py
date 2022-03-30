@@ -15,9 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from testapp import views
+
+from modelinheritenceapp import views as v2
+from multitableinheritance import views as v1
+from proxyapp import views as v3
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.display_view),
-    path('aggre/',views.aggregate_view),
+
+    path("mt/",v1.studenet_view),
+    path("ab/",v2.student_view),
+    path("pi/",v3.emp_views),
 ]
