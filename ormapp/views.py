@@ -9,6 +9,6 @@ def create_views(request):
         qs=Actors.objects.all()
     return render(request,"actors.html",{"actors":qs})
 def retrieve_view(request):
-    qs =Actors.objects.filter(name__endswith = 'n')
+    qs =Actors.objects.all()
 
     return render(request,"actors.html",{"actors":qs})
