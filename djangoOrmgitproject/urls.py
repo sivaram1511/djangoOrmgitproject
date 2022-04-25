@@ -19,10 +19,15 @@ from django.urls import path
 from modelinheritenceapp import views as v2
 from multitableinheritance import views as v1
 from proxyapp import views as v3
+from onetomany import views as v4
+from ormapp import views as v5
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     path("mt/",v1.studenet_view),
     path("ab/",v2.student_view),
     path("pi/",v3.emp_views),
+    path("om/",v4.emp_dept_view),
+    path("orm/",v5.create_views),
+    path("rc/",v5.retrieve_view),
 ]

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{employee.name}}
+<table border="2">
+  <thead>
+  <th>Name</th>
+  <th>Age</th>
+  <th>Department</th>
+  </thead>
+  {%for x in employee%}
+  <tr>
+    <td>{{x.name}}</td>
+    <td>{{x.age}}</td>
+    <td>{{x.department}}</td>
+  </tr>
+  {%endfor%}
+</table>
+
+</body>
+</html>

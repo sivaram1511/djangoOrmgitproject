@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{actors.name}}
+<table border="2">
+    <thead>
+    <th>id</th>
+     <th>name</th>
+     <th>industoryname</th>
+     <th>noofmovies</th>
+     <th>hitmovies</th>
+     <th>screenname</th>
+    </thead>
+{% for a in actors%}
+<tr>
+    <td>{{a.id}}</td>
+    <td>{{a.name}}</td>
+    <td>{{a.industoryname}}</td>
+    <td>{{a.noofmovies}}</td>
+    <td>{{a.hitmovies}}</td>
+    <td>{{a.screenname}}</td>
+</tr>
+{%endfor%}
+</table>
+</body>
+</html>
